@@ -13,9 +13,15 @@ function submitForm(e) {
 
     // Store player name //
     sessionStorage.setItem("Name", userName)
-
-    // Quiz Web //
-    location.href = "quiz.html"
+    
+    // Condition To Enter Name
+    if(userName){
+        // Quiz Web //
+        location.href = "quiz.html"
+    }
+    else {
+        alert('Enter Your Name Please to Proceed')
+    }
 }
 
 
